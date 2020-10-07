@@ -1,0 +1,66 @@
+body {
+    background-color: green;
+    font-family: fantasy;
+    margin: auto;
+}
+
+.tip-calculator {
+    width: 30%;
+    
+    margin: auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 20px;
+    box-shadow: 0px 3px 0px 0px black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.options button {
+    text-align: center;
+}
+
+.center {
+    margin-top: -240px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(50%);
+    transform: translateX(-50%);
+}
+
+.centerB {
+    margin-top: -210px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.centerC {
+    margin-top: -180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-8
+    0%);
+}
+
+.bouncy{
+    animation:bouncy 5s infinite linear;
+    position: relative;
+}
+@keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+}

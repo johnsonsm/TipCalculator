@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="tip-calculator">
+      <h1>How Much Should You Tip?</h1>
+      <form>
+        <div class="center">
+        <label for="bill">Bill: </label>
+        <input id="bill" type="number" name="bill" />
+      </div>
+        </form>
+      </form>
+      <div class="options">
+        <div class="centerB">
+        <button class="button1 bouncy" onclick="calculateTip()">15%</button>
+        <button class="button1 bouncy" onclick="calculateTipB()" style="animation-delay: 0.07s;">
+          20%
+        </button>
+        <button class="button1 bouncy" onclick="calculateTipC()" style="animation-delay: 0.014s;">
+          25%
+        </button>
+        <p id="demo">
+          <div class="centerC">
+          </div>
+        </p>
+        <!--
+        <input
+          type="number"
+          id="myNumber"
+          value="0.0"
+          class="button1 bouncy"
+          style="animation-delay: 0.021s;"
+        />
+        -->
+      </div>
+      </div>
+    </div>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
