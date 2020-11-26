@@ -11,25 +11,18 @@
     <div class="tip-calculator">
       <h1>How Much Should You Tip?</h1>
       <form>
-        <div class="center">
-        <label for="bill">Bill: </label>
-        <input id="bill" type="number" name="bill" />
-      </div>
+        <div class="center bill">
+          <label for="bill">Bill: </label>
+          <input id="bill" type="number" name="bill" />
+        </div>
       </form>
       <div class="options">
         <div class="percentages">
-        <button onclick="calculateTip(15)">15%</button>
-        <button onclick="calculateTip(20)">
-          20%
-        </button>
-        <button onclick="calculateTip(25)">
-          25%
-        </button>
-        <p id="tip">
-          <div>
-          </div>
-        </p>
-      </div>
+          <button onclick="calculateTip(15)">15%</button>
+          <button onclick="calculateTip(20)">20%</button>
+          <button onclick="calculateTip(25)">25%</button>
+        </div>
+        <p id="tip"></p>
       </div>
     </div>
   </body>

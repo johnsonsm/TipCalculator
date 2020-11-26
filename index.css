@@ -11,6 +11,10 @@ body {
   margin: auto;
 }
 
+h1 {
+  text-align: center;
+}
+
 .tip-calculator {
   background-color: white;
   width: 50%;
@@ -24,8 +28,28 @@ body {
   text-align: center;
 }
 
-h1 {
-  text-align: center;
+.percentages {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.percentages button {
+  cursor: pointer;
+  color: white;
+  background-color: #50ce37;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: 0.2s ease all;
+  width: 150px;
+}
+
+.percentages button:hover {
+  background-color: white;
+  color: #50ce37;
+  border-color: #50ce37;
 }
 
 .options button {
