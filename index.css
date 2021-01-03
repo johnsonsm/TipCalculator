@@ -1,56 +1,118 @@
-body {
-  background-color: green;
-  font-family: fantasy;
-  margin: auto;
-  height: 100vh;
-}
+/* Color Palette 
+  White: #ffffff
+  Light Green: #81ff78
+  Normal Green: #73ff54
+  Dark Green: #50ce37
+*/
 
-.tip-calculator {
-  width: 30%;
+body {
+  background-color: #81ff78;
+  font-family: Roboto, "Segoe UI", sans-serif;
   margin: auto;
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
-  padding: 20px;
-  box-shadow: 0px 3px 0px 0px black;
-  background-color: white;
-  border-radius: 20px;
-  text-align: center;
-  transform: translateY(50%);
 }
 
 h1 {
   text-align: center;
 }
 
-.options button {
+hr {
+  margin: 30px auto;
+  width: 80%;
+  background-color: lightgray;
+}
+
+.tip-calculator {
+  background-color: white;
+  width: 50%;
+  margin: 20px auto;
+  border-width: 5px 0px 0px 0px;
+  border-color: rgba(80, 206, 55, 1);
+  border-radius: 15px;
+  border-style: solid;
+  box-shadow: 4px 6px 2px 2px rgba(0, 0, 0, 0.4);
+  padding: 20px;
   text-align: center;
 }
 
-.bouncy {
-  animation: bouncy 5s infinite linear;
-  position: relative;
+.percentages {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
 }
-@keyframes bouncy {
-  0% {
-    top: 0em;
-  }
-  40% {
-    top: 0em;
-  }
-  43% {
-    top: -0.9em;
-  }
-  46% {
-    top: 0em;
-  }
-  48% {
-    top: -0.4em;
-  }
-  50% {
-    top: 0em;
-  }
-  100% {
-    top: 0em;
-  }
+
+.percentages button {
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #50ce37;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: 0.2s ease all;
+  width: 150px;
+}
+
+.percentages button:hover {
+  background-color: white;
+  color: #50ce37;
+  border-color: #50ce37;
+}
+
+.percentages button:focus {
+  outline: none;
+  border-color: black;
+}
+
+.options {
+  margin: 20px;
+}
+
+.bill,
+.options {
+  font-size: 20px;
+  text-align: center;
+}
+
+.bill label,
+.options label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bill span {
+  font-weight: bold;
+}
+
+.bill input {
+  border-radius: 5px;
+  border: 0;
+  border-bottom: solid 2px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.bill input:focus {
+  outline: none;
+  border-color: rgba(80, 206, 55, 1);
+}
+
+.results {
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  background-color: rgba(80, 206, 55, 0.5);
+}
+
+button.current-percentage {
+  border-color: rgba(80, 206, 55, 1);
+  color: rgba(80, 206, 55, 1);
+  background-color: white;
+  box-shadow: none;
+}
+
+#tip {
+  margin: 0;
 }
