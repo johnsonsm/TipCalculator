@@ -106,9 +106,11 @@ hr {
   background-color: rgba(80, 206, 55, 0.5);
 }
 
-.current-percentage {
+button.current-percentage {
   border-color: rgba(80, 206, 55, 1);
+  color: rgba(80, 206, 55, 1);
   background-color: white;
+  box-shadow: none;
 }
 
 #tip {
